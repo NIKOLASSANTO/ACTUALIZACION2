@@ -1,3 +1,8 @@
+.carrito{
+    margin-left: -17px;
+}
+
+
 /*----------------------------------------------------
 @File: Default Styles
 @Author: Colorlib
@@ -77,6 +82,66 @@ This files contents are outlined below.
 .button_all:hover:before, .button_all:focus:before {
   transform: scaleY(1);
 }
+
+
+
+
+/* Button 2*/
+.button_all2 {
+  font: 700 18px/59px "Roboto", sans-serif;  
+  width: 100px; 
+  margin-left:25px;
+  background: #f4a54e;
+  display: block;
+  border: 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+.button_all2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #3B5998;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.button_all2:hover, .button_all2:focus {
+  color: #fff !important;
+}
+.button_all2:hover:before, .button_all2:focus:before {
+  transform: scaleY(1);
+}
+
+/*-------FIN DEL OTRO BOTON-------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Section Title*/
 .tittle {
@@ -186,7 +251,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 /*--------------------------------------------------*/
 /* Top header */
 .top_header_area {
-  background: #111f29;
+  background: #f4a54e;
 }
 .top_header_area .top_nav li a {
   font: 400 14px/50px "Roboto", sans-serif;
@@ -261,7 +326,6 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   width: 100%;
   z-index: 9999;
   top: 0;
-  box-shadow: 0px 0px 20px 0px rgba(21, 47, 95, 0.2);
 }
 .header_aera .searchForm {
   height: 0;
@@ -305,13 +369,13 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   border-bottom: 1px solid transparent;
 }
 .header_aera .navbar-header .navbar-brand {
-  padding-top: 39px;
+  padding-top: 10px;
 }
 .header_aera .navbar-header .navbar-brand img {
   max-width: 100%;
 }
 .header_aera .navbar-collapse .navbar-nav.navbar-right li a {
-  font: 700 14px/100px "Roboto", sans-serif;
+  font: 700 14px/65px "Roboto", sans-serif;
   color: #222222;
   text-transform: uppercase;
   padding: 0;
@@ -342,7 +406,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   border-radius: 0px;
   min-width: 190px;
   transition: all 500ms ease-in-out;
-  background: #3B5998;
+  background: #f4a54e;
 }
 @media (min-width: 768px) {
   .header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul {
@@ -450,12 +514,12 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 .slider_area .slider_inner .camera_caption div h5 {
   color: #f4a54e;
-  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  text-shadow: 0 4px 100px #f4a54e, 0px -2px 1px #fff;
   font: 400 50px "Roboto", sans-serif;
 }
 .slider_area .slider_inner .camera_caption div h3 {
   color: #fff;
-    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px black;
+    text-shadow: 0 4px 100px #c4b59d, 0px -4px 1px black;
     font: 400 50px "Roboto", sans-serif;
   padding-top: 27px;
 }
@@ -2059,14 +2123,14 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   padding-top: 30px;
 }
 .all_contact_info .contact_row .send_message .contact_box .input_box {
-  border: 1px solid #dfe3e4;
+  border: 1px solid black;
   border-radius: 0;
   box-shadow: none;
   outline: none;
   height: 50px;
   padding-left: 15px;
   width: 100%;
-  color: #d3dadf;
+  color: black;
   margin-bottom: 20px;
 }
 .all_contact_info .contact_row .send_message .contact_box .input_box.placeholder {
@@ -2076,7 +2140,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   color: #d3dadf;
 }
 .all_contact_info .contact_row .send_message .contact_box .input_box::-webkit-input-placeholder {
-  color: #d3dadf;
+  
 }
 .all_contact_info .contact_row .send_message .contact_box textarea {
   height: 120px !important;
@@ -2455,7 +2519,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
     height: 80px;
   }
   .header_aera .navbar-header .navbar-brand {
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   .header_aera .navbar-collapse .navbar-nav.navbar-right li a {
